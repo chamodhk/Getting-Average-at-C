@@ -14,7 +14,12 @@ int main() {
 
     char input;
     scanf("%c", &input);
+    
+    if ( input < 'a'|| input >= 'z') {
+        printf("please input a character between a and z (lower case)\n");
+        return 1;
 
+    }
     char result = input + shift;
 
     printf("%c\n", result);
