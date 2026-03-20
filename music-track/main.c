@@ -22,9 +22,9 @@ int main(int argc, char * argv []) {
     //the search is case sensitive.
     for (int i = 0; i < 5; i++) {
         char *curr_track = tracks[i];
-        char *occurrence = strstr(curr_track,buffer);
+        char *occurrence = strcasestr(curr_track,buffer);
         if (occurrence != NULL) {
-            printf("%s\n", curr_track);
+            printf("%s\n", curr_track );
         }
     }
    
